@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <table border="1">
+        <tr>
+            <th>student_id</th>
+            <th>course_id</th>
+            <th>marks</th>
+        </tr>
+        {% for n in data %}
+            <tr>
+                <td> row[0] </td>
+                <td> row[1] </td>
+                <td> row[2] </td>
+            </tr>
+        {% endfor %}
+
+        <tr>
+            <td colspan="2" align="center"> Total Marks </td>
+            <td>{{sum}}</td>
+        </tr>
+    </table>
+</body>
+</html>
